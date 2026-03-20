@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/chacha-nehru-bal-chikitsalaya-geeta-colony-delhi-155837",
-  "https://www.shiksha.com/college/st-peter-s-medical-college-hospital-and-research-institute-hosur-180735",
-  "https://www.shiksha.com/college/columbia-institute-of-pharmacy-raipur-87669",
-  "https://www.shiksha.com/college/mgm-silver-jubilee-college-of-pharmacy-thiruvananthapuram-156375",
-  "https://www.shiksha.com/college/government-mohindra-college-patiala-68473",
-  "https://www.shiksha.com/college/lifeness-science-institute-malad-west-mumbai-145635",
-  "https://www.shiksha.com/college/sarat-chandra-chattopadhyay-govt-medical-college-and-hospital-howrah-207481",
-  "https://www.shiksha.com/college/government-medical-college-nandyal-kurnool-213193",
-  "https://www.shiksha.com/college/lakhimpur-medical-college-and-hospital-assam-other-180585",
-  "https://www.shiksha.com/university/maharashtra-animal-and-fishery-sciences-university-nagpur-64813",
-  "https://www.shiksha.com/college/viper-vishnu-institute-of-pharmaceutical-education-and-research-hyderabad-70261",
-  "https://www.shiksha.com/college/lord-shiva-college-of-pharmacy-sirsa-87965",
-  "https://www.shiksha.com/college/college-of-veterinary-and-animal-sciences-parbhani-190235",
-  "https://www.shiksha.com/college/government-ayurved-college-and-hospital-jalgaon-192595",
-  "https://www.shiksha.com/college/prestige-institute-of-management-research-bhopal-43105",
-  "https://www.shiksha.com/university/p-k-university-madhya-pradesh-other-64745",
-  "https://www.shiksha.com/college/channabasweshwar-pharmacy-college-latur-88683",
-  "https://www.shiksha.com/college/apollo-hospital-gandhinagar-106119",
-  "https://www.shiksha.com/college/vasan-institute-of-ophthalmology-and-research-vior-bangalore-jayanagar-41314",
-  "https://www.shiksha.com/college/rajasthan-unani-medical-college-and-hospital-jaipur-87097",
+  "https://www.shiksha.com/college/odisha-institute-of-educational-developmental-studies-khordha-200607",
+  "https://www.shiksha.com/college/duargapur-paramedical-institute-durgapur-202291",
+  "https://www.shiksha.com/college/mar-baselios-dental-college-ernakulum-66093",
+  "https://www.shiksha.com/college/government-polytechnic-college-kashipur-98493",
+  "https://www.shiksha.com/college/dr-baba-saheb-ambedkar-medical-college-and-hospital-delhi-105929",
+  "https://www.shiksha.com/college/institute-of-professional-studies-ips-meerut-33120",
+  "https://www.shiksha.com/college/institute-of-dental-studies-and-technologies-ghaziabad-67467",
+  "https://www.shiksha.com/college/purvanchal-institute-of-dental-sciences-gorakhpur-67481",
+  "https://www.shiksha.com/college/universal-group-of-institutions-mohali-51836",
+  "https://www.shiksha.com/college/autonomous-state-medical-college-siddharthnagar-uttar-pradesh-other-180743",
+  "https://www.shiksha.com/college/prathap-narender-reddy-college-of-pharmacy-telangana-other-87785",
+  "https://www.shiksha.com/college/mce-society-s-allana-college-of-pharmacy-pune-88173",
+  "https://www.shiksha.com/college/bharat-group-of-institutions-kurukshetra-88531",
+  "https://www.shiksha.com/college/bharati-vidyapeeth-institute-of-pharmacy-navi-mumbai-88943",
+  "https://www.shiksha.com/college/bangalore-baptist-college-of-nursing-89587",
+  "https://www.shiksha.com/college/s-p-b-physiotherapy-college-surat-196973",
+  "https://www.shiksha.com/college/department-of-pharmaceutical-sciences-csjm-university-kanpur-53388",
+  "https://www.shiksha.com/college/government-medical-college-machilipatnam-213191",
+  "https://www.shiksha.com/college/prafulla-chandra-sen-government-medical-college-and-hospital-hooghly-207479",
+  "https://www.shiksha.com/college/emversity-school-of-hospitality-kochi-ernakulum-227683",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 1421
+    c_count = 1621
 
     try:
         for base_url in BASE_URL:
