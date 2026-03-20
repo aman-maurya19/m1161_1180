@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/university/nau-navsari-agricultural-university-58297",
-  "https://www.shiksha.com/college/k-j-somaiya-college-of-arts-and-commerce-vidya-vihar-mumbai-48059",
-  "https://www.shiksha.com/college/dr-m-c-saxena-group-of-colleges-mcsgoc-lucknow-24074",
-  "https://www.shiksha.com/college/hillside-group-of-institutions-kanakapura-road-bangalore-26781",
-  "https://www.shiksha.com/college/sir-c-r-reddy-college-of-pharmaceutical-sciences-eluru-61079",
-  "https://www.shiksha.com/college/darshan-dental-college-and-hospital-ranakpur-86883",
-  "https://www.shiksha.com/college/s-v-polytechnic-college-bhopal-147217",
-  "https://www.shiksha.com/college/patna-institute-of-nursing-and-paramedical-science-194855",
-  "https://www.shiksha.com/college/dpg-polytechnic-gurgaon-53487",
-  "https://www.shiksha.com/college/swargiya-dadasaheb-kalmegh-smruti-dental-college-and-hospital-nagpur-68041",
-  "https://www.shiksha.com/college/vasantdada-patil-dental-college-and-hospital-sangli-68049",
-  "https://www.shiksha.com/college/shrimati-kamlaben-raoji-bhai-patel-gujarati-homoeopathic-medical-college-hospital-and-research-centre-indore-125937",
-  "https://www.shiksha.com/college/ng-institute-of-paramedical-sciences-coimbatore-212981",
-  "https://www.shiksha.com/college/raichur-institute-of-medical-sciences-63087",
-  "https://www.shiksha.com/college/prakash-institute-of-ayurvedic-medical-sciences-and-research-bulandshahr-87523",
-  "https://www.shiksha.com/college/raghavendra-institute-of-pharmaceutical-education-and-research-anantapur-61167",
-  "https://www.shiksha.com/college/ch-devi-lal-group-of-institutes-yamuna-nagar-70285",
-  "https://www.shiksha.com/college/delhi-institute-of-rural-development-holambi-khurd-narela-44133",
-  "https://www.shiksha.com/university/mizoram-university-aizawl-46862",
-  "https://www.shiksha.com/college/rajib-gandhi-memorial-ayurvedic-college-and-hospital-district-24-parganas-87069",
+  "https://www.shiksha.com/college/chacha-nehru-bal-chikitsalaya-geeta-colony-delhi-155837",
+  "https://www.shiksha.com/college/st-peter-s-medical-college-hospital-and-research-institute-hosur-180735",
+  "https://www.shiksha.com/college/columbia-institute-of-pharmacy-raipur-87669",
+  "https://www.shiksha.com/college/mgm-silver-jubilee-college-of-pharmacy-thiruvananthapuram-156375",
+  "https://www.shiksha.com/college/government-mohindra-college-patiala-68473",
+  "https://www.shiksha.com/college/lifeness-science-institute-malad-west-mumbai-145635",
+  "https://www.shiksha.com/college/sarat-chandra-chattopadhyay-govt-medical-college-and-hospital-howrah-207481",
+  "https://www.shiksha.com/college/government-medical-college-nandyal-kurnool-213193",
+  "https://www.shiksha.com/college/lakhimpur-medical-college-and-hospital-assam-other-180585",
+  "https://www.shiksha.com/university/maharashtra-animal-and-fishery-sciences-university-nagpur-64813",
+  "https://www.shiksha.com/college/viper-vishnu-institute-of-pharmaceutical-education-and-research-hyderabad-70261",
+  "https://www.shiksha.com/college/lord-shiva-college-of-pharmacy-sirsa-87965",
+  "https://www.shiksha.com/college/college-of-veterinary-and-animal-sciences-parbhani-190235",
+  "https://www.shiksha.com/college/government-ayurved-college-and-hospital-jalgaon-192595",
+  "https://www.shiksha.com/college/prestige-institute-of-management-research-bhopal-43105",
+  "https://www.shiksha.com/university/p-k-university-madhya-pradesh-other-64745",
+  "https://www.shiksha.com/college/channabasweshwar-pharmacy-college-latur-88683",
+  "https://www.shiksha.com/college/apollo-hospital-gandhinagar-106119",
+  "https://www.shiksha.com/college/vasan-institute-of-ophthalmology-and-research-vior-bangalore-jayanagar-41314",
+  "https://www.shiksha.com/college/rajasthan-unani-medical-college-and-hospital-jaipur-87097",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 1161
+    c_count = 1421
 
     try:
         for base_url in BASE_URL:
