@@ -15,18 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/iet-group-of-institutions-ropar-28995",
-  "https://www.shiksha.com/university/the-university-of-trans-disciplinary-health-sciences-and-technology-bangalore-52880",
-  "https://www.shiksha.com/college/sree-chaitanya-institute-of-pharmaceutical-sciences-karimnagar-87781",
-  "https://www.shiksha.com/college/late-bhagirathi-yashwantrao-pathrikar-college-of-pharmacy-aurangabad-88577",
-  "https://www.shiksha.com/college/lissie-college-of-nursing-lisie-hospital-ernakulum-90285",
-  "https://www.shiksha.com/college/late-adv-dadasaheb-chavan-memorial-institute-of-pharmacy-satara-89225",
-  "https://www.shiksha.com/college/government-polytechnic-college-khunimajra-kharar-96933",
-  "https://www.shiksha.com/university/shri-shankaracharya-professional-university-bhilai-202471",
-  "https://www.shiksha.com/college/trimurti-institute-of-pharmacy-jalgaon-88967",
-  "https://www.shiksha.com/college/shri-sanatan-dharam-institute-of-pharmacy-and-medical-technology-jhajjar-100479",
-  "https://www.shiksha.com/college/dr-vasant-parikh-ayurvedic-medical-college-mehsana-182235",
-  "https://www.shiksha.com/college/gmers-medical-college-morbi-210097",
+  "https://www.shiksha.com/college/ashwini-group-of-hospitals-cuttack-215567",
+  "https://www.shiksha.com/college/prism-degree-and-pg-college-visakhapatnam-68757",
+  "https://www.shiksha.com/college/dolat-usha-institute-of-applied-sciences-and-dhiru-sarla-institute-of-management-and-commerce-valsad-71491",
+  "https://www.shiksha.com/college/bengal-college-of-pharmaceutical-technology-birbhum-149243",
+  "https://www.shiksha.com/college/the-gayatri-chetna-foundation-narendrapur-makaut-off-campus-george-group-of-colleges-narendrapur-kolkata-149827",
+  "https://www.shiksha.com/college/lourde-institute-of-allied-health-sciences-kannur-194495",
+  "https://www.shiksha.com/college/westfort-institute-of-paramedical-sciences-thrissur-194747",
+  "https://www.shiksha.com/college/mahatma-gandhi-university-cheruvandoor-kottayam-210243",
+  "https://www.shiksha.com/college/aditya-institute-of-technology-delhi-97439",
+  "https://www.shiksha.com/college/dr-babasaheb-ambedkar-memorial-central-railway-hospital-mumbai-105921",
+  "https://www.shiksha.com/college/annasaheb-ramesh-ajmera-college-of-pharmacy-dhule-150701",
+  "https://www.shiksha.com/college/government-medical-college-khammam-213203",
+  "https://www.shiksha.com/college/virohan-gh-raisoni-university-pune-wagholi-245480",
+  "https://www.shiksha.com/college/gyanmanjari-institute-of-technology-bhavnagar-58911",
+  "https://www.shiksha.com/college/dr-kn-modi-institute-of-pharmaceutical-education-and-research-modinagar-59759",
+  "https://www.shiksha.com/college/dev-bhoomi-college-of-pharmacy-saharanpur-65475",
+  "https://www.shiksha.com/college/government-medical-college-and-hospital-karur-65929",
+  "https://www.shiksha.com/college/baba-narayandas-ayurved-nursing-training-centre-jhunjhunu-87125",
+  "https://www.shiksha.com/college/arjun-college-of-pharmacy-bhagalpur-207543",
+  "https://www.shiksha.com/college/trilochan-netralaya-sambalpur-226907",
 ]
 
 
@@ -9235,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 1889
+    c_count = 2161
 
     try:
         for base_url in BASE_URL:
