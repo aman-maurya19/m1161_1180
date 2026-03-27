@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/k-m-college-of-pharmacy-mathura-181917",
-  "https://www.shiksha.com/college/a-v-s-ayurvedic-medical-college-bijapur-185765",
-  "https://www.shiksha.com/college/prudence-college-of-allied-health-sciences-bangalore-186725",
-  "https://www.shiksha.com/college/samahi-college-of-pharmacy-uttar-pradesh-other-65761",
-  "https://www.shiksha.com/college/banarsi-dass-arya-college-jalandhar-70815",
-  "https://www.shiksha.com/college/r-j-world-college-of-pharmacy-education-and-technology-jhunjhunu-88613",
-  "https://www.shiksha.com/college/noble-college-of-pharmacy-medak-88959",
-  "https://www.shiksha.com/college/jan-kalyan-institute-of-technical-education-lucknow-89259",
-  "https://www.shiksha.com/college/jan-nayak-ch-devi-lal-memorial-college-of-pharmacy-sirsa-146633",
-  "https://www.shiksha.com/college/r-j-college-of-pharmacy-aligarh-149295",
-  "https://www.shiksha.com/college/shri-veer-pulikeshi-rural-ayurvedic-medical-college-bagalkot-184707",
-  "https://www.shiksha.com/college/bombay-institute-of-health-science-and-research-hanumangarh-201243",
-  "https://www.shiksha.com/college/srinivasa-college-of-physiotherapy-karnataka-other-202007",
-  "https://www.shiksha.com/college/heritage-pharmacy-college-garhwa-207597",
-  "https://www.shiksha.com/college/yashodhara-bajaj-college-of-pharmacy-chandrapur-nagpur-208105",
-  "https://www.shiksha.com/college/parimala-pandurangan-college-of-pharmacy-vellore-208253",
-  "https://www.shiksha.com/college/gwalior-mansik-arogyashala-213349",
-  "https://www.shiksha.com/college/lalitaben-ramniklal-shah-homoeopathy-college-rajkot-214801",
-  "https://www.shiksha.com/college/shree-ambabai-talim-sanstha-s-diploma-in-pharmacy-sangli-89207",
-  "https://www.shiksha.com/college/global-polytechnic-college-patiala-97013",
+  "https://www.shiksha.com/college/ali-yabar-jung-national-institute-for-hearing-handicapped-kolkata-116997",
+  "https://www.shiksha.com/college/g-d-c-memorial-college-bhiwani-123519",
+  "https://www.shiksha.com/college/government-shivalik-college-naya-nangal-rupnagar-133359",
+  "https://www.shiksha.com/college/shri-gajanan-shiksha-samiti-college-hoshangabad-147183",
+  "https://www.shiksha.com/college/s-d-ayurvedic-medical-college-and-hospital-ranchi-187697",
+  "https://www.shiksha.com/college/akila-thiruvithamcore-siddha-vaidhya-kalloori-siddha-medical-college-and-hospital-kanyakumari-193687",
+  "https://www.shiksha.com/college/unity-institute-of-paramedical-sciences-mangalore-199427",
+  "https://www.shiksha.com/college/sunrise-college-of-physiotherapy-college-bidar-210629",
+  "https://www.shiksha.com/college/betwanchal-group-of-institutions-vidisha-230050",
+  "https://www.shiksha.com/college/bgs-medical-college-and-hospital-bangalore-232920",
+  "https://www.shiksha.com/college/annaii-medical-college-and-hospital-sriperumbudur-234512",
+  "https://www.shiksha.com/college/sikkim-college-of-pharmacy-and-research-sikkim-other-237484",
+  "https://www.shiksha.com/college/kims-kingsway-hospitals-nagpur-243660",
+  "https://www.shiksha.com/college/indira-institute-of-professional-studies-bhopal-147331",
+  "https://www.shiksha.com/college/dr-m-v-shetty-institute-of-health-sciences-mangalore-185867",
+  "https://www.shiksha.com/college/khyati-college-of-physiotherapy-ahmedabad-197159",
+  "https://www.shiksha.com/college/department-of-pharmacy-pune-198397",
+  "https://www.shiksha.com/college/stephens-college-of-pharmacy-jammu-236486",
+  "https://www.shiksha.com/college/crk-college-of-pharmacy-hajipur-vaishali-237372",
+  "https://www.shiksha.com/college/institute-of-business-management-and-research-ibmr-kolkata-e-m-bypass-40727",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 3121
+    c_count = 3021
 
     try:
         for base_url in BASE_URL:
