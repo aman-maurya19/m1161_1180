@@ -15,26 +15,27 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/ali-yabar-jung-national-institute-for-hearing-handicapped-kolkata-116997",
-  "https://www.shiksha.com/college/g-d-c-memorial-college-bhiwani-123519",
-  "https://www.shiksha.com/college/government-shivalik-college-naya-nangal-rupnagar-133359",
-  "https://www.shiksha.com/college/shri-gajanan-shiksha-samiti-college-hoshangabad-147183",
-  "https://www.shiksha.com/college/s-d-ayurvedic-medical-college-and-hospital-ranchi-187697",
-  "https://www.shiksha.com/college/akila-thiruvithamcore-siddha-vaidhya-kalloori-siddha-medical-college-and-hospital-kanyakumari-193687",
-  "https://www.shiksha.com/college/unity-institute-of-paramedical-sciences-mangalore-199427",
-  "https://www.shiksha.com/college/sunrise-college-of-physiotherapy-college-bidar-210629",
-  "https://www.shiksha.com/college/betwanchal-group-of-institutions-vidisha-230050",
-  "https://www.shiksha.com/college/bgs-medical-college-and-hospital-bangalore-232920",
-  "https://www.shiksha.com/college/annaii-medical-college-and-hospital-sriperumbudur-234512",
-  "https://www.shiksha.com/college/sikkim-college-of-pharmacy-and-research-sikkim-other-237484",
-  "https://www.shiksha.com/college/kims-kingsway-hospitals-nagpur-243660",
-  "https://www.shiksha.com/college/indira-institute-of-professional-studies-bhopal-147331",
-  "https://www.shiksha.com/college/dr-m-v-shetty-institute-of-health-sciences-mangalore-185867",
-  "https://www.shiksha.com/college/khyati-college-of-physiotherapy-ahmedabad-197159",
-  "https://www.shiksha.com/college/department-of-pharmacy-pune-198397",
-  "https://www.shiksha.com/college/stephens-college-of-pharmacy-jammu-236486",
-  "https://www.shiksha.com/college/crk-college-of-pharmacy-hajipur-vaishali-237372",
-  "https://www.shiksha.com/college/institute-of-business-management-and-research-ibmr-kolkata-e-m-bypass-40727",
+  "https://www.shiksha.com/college/sss-college-of-pharmacy-azamgarh-181647",
+  "https://www.shiksha.com/college/shri-mahakaleshwar-pharmacy-college-azamgarh-181653",
+  "https://www.shiksha.com/college/faujdar-college-of-pharmacy-ghazipur-181781",
+  "https://www.shiksha.com/college/maa-vaishnavi-pharmacy-college-jaunpur-181847",
+  "https://www.shiksha.com/college/jeeramani-jagdish-institute-of-pharmacy-jharkhand-other-207605",
+  "https://www.shiksha.com/college/prestige-college-of-pharmacy-tumkur-207827",
+  "https://www.shiksha.com/college/st-peter-s-college-faridabad-211543",
+  "https://www.shiksha.com/university/dnyaan-prasad-global-university-dr-d-y-patil-unitech-society-pune-226891",
+  "https://www.shiksha.com/college/torch-bearers-institute-of-pharmacy-and-research-faridabad-236480",
+  "https://www.shiksha.com/college/nirmala-devi-polytechnic-college-jharkhand-other-236530",
+  "https://www.shiksha.com/college/n-k-college-of-pharmacy-buldana-236728",
+  "https://www.shiksha.com/college/einstein-college-of-pharmacy-orissa-other-236828",
+  "https://www.shiksha.com/college/i-world-institute-of-pharmacy-midnapore-237274",
+  "https://www.shiksha.com/college/apollo-adlux-hospital-ernakulum-240750",
+  "https://www.shiksha.com/college/gg-hospital-thiruvananthapuram-240786",
+  "https://www.shiksha.com/college/sri-sathya-sai-sanjeevani-centre-for-child-heart-care-and-training-navi-mumbai-241876",
+  "https://www.shiksha.com/college/paras-hospital-udaipur-243696",
+  "https://www.shiksha.com/college/sagar-college-of-pharmacy-belgaum-244812",
+  "https://www.shiksha.com/college/viraat-ramayan-institute-of-medical-sciences-motihari-245850",
+  "https://www.shiksha.com/college/onkar-college-of-pharmacy-sangrur-99713",
+  "https://www.shiksha.com/college/institute-of-pharmacy-jalgaon-100187",
 ]
 
 
@@ -9243,7 +9244,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 3021
+    c_count = 4261
 
     try:
         for base_url in BASE_URL:
